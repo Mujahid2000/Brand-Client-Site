@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "brand": "Porsche",
+    "image": "https://i.ibb.co/31KQ8Z3/Porsche-Logo-1.png"
+  },
+  {
+    "id": 2,
+    "brand": "Mercedes Benz",
+    "image": "https://i.ibb.co/p6T5VZd/Untitled-1.jpg"
+  },
+  {
+    "id": 3,
+    "brand": "Lamborghini",
+    "image": "https://i.ibb.co/CPjDnKx/logo-lamborghini-1024x576.jpg"
+  },
+  {
+    "id": 4,
+    "brand": "Hyundai",
+    "image": "https://i.ibb.co/kqx272g/hyundai-removebg-preview.jpg"
+  },
+  {
+    "id": 5,
+    "brand": "Ferrari",
+    "image": "https://i.ibb.co/dG0BvQg/ferrari-removebg-preview.jpg"
+  },
+  {
+    "id": 6,
+    "brand": "BMW",
+    "image": "https://i.ibb.co/X8w7KzY/BMW-removebg-preview.jpg"
+  }
+]
