@@ -13,7 +13,7 @@ const AddProductPage = () => {
     const [reFetch, setReFetch] = useState(false);
     useEffect(() => {
         async function fetchData() {
-            fetch(`http://localhost:5050/product/get/${id}`)
+            fetch(`https://brand-server-site.vercel.app/product/get/${id}`)
                 .then(async res => await res.json())
                 .then(data => {
                     setData(data)
@@ -40,7 +40,7 @@ const AddProductPage = () => {
         const brandData = {
             image, name, brand, type, price, rating
         }
-        fetch('http://localhost:5050/update/' + data?._id, {
+        fetch('https://brand-server-site.vercel.app/update/' + data?._id, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

@@ -9,7 +9,7 @@ const Details = () => {
     const { user } = useContext(AuthContext);
     useEffect(() => {
         async function fetchData() {
-            fetch(`http://localhost:5050/product/get/${id}`)
+            fetch(`https://brand-server-site.vercel.app/product/get/${id}`)
                 .then(async res => await res.json())
                 .then(data => {
                     setData(data)
@@ -23,7 +23,7 @@ const Details = () => {
             productId: id
         }
         //    fech post data
-        fetch('http://localhost:5050/add-to-cart', {
+        fetch('https://brand-server-site.vercel.app/add-to-cart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

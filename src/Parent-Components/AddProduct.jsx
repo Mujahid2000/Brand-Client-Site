@@ -24,7 +24,7 @@ const AddProductPage = () => {
 
         // send data server
 
-        fetch('http://localhost:5050/carmodel', {
+        fetch('https://brand-server-site.vercel.app/carmodel', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -8,7 +8,7 @@ const Mycarts = () => {
     const [reFetch, setReFetch] = useState(false);
     useEffect(() => {
         async function fetchData() {
-            fetch(`http://localhost:5050/my-cart/` + user?.uid)
+            fetch(`https://brand-server-site.vercel.app/my-cart/` + user?.uid)
                 .then(async res => await res.json())
                 .then(data => {
                     setData(data)
@@ -20,7 +20,7 @@ const Mycarts = () => {
     }, [user, reFetch])
 
     async function deleteToCart(productId, userId) {
-        const result = await fetch(`http://localhost:5050/my-cart/${productId}/${userId}`, {
+        const result = await fetch(`https://brand-server-site.vercel.app/my-cart/${productId}/${userId}`, {
             method: 'DELETE'
         })
         const data = await result.json()

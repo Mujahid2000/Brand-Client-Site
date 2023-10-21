@@ -8,7 +8,7 @@ const Brand = () => {
     
     useEffect(() => {
         // Fetch data when the component mounts
-        fetch('http://localhost:5050/carmodel')
+        fetch('https://brand-server-site.vercel.app/carmodel')
             .then(response => response.json())
             .then(data => setCarData(data))
             .catch(error =>{});
