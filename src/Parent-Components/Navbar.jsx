@@ -21,7 +21,7 @@ const Navbar = () => {
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href="" className="flex items-center">
                         <img src="https://i.ibb.co/Lvdjqm4/car-logo.png" className="h-8 rounded-lg mr-3" alt="Flowbite Logo" />
-                        <span className="self-center text-2xl font-semibold whitespace-nowrap text-blue-500">Card Deals</span>
+                        <span className="self-center text-2xl font-semibold whitespace-nowrap text-blue-500">Car Deals</span>
                     </a>
                     <button onClick={() => {
                         document.getElementById("navbar-default").classList.toggle("hidden");

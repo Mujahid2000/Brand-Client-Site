@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="sm:flex sm:items-center sm:justify-between">
             <a href="" className="flex items-center mb-4 sm:mb-0">
                 <img src="https://i.ibb.co/Lvdjqm4/car-logo.png" className="h-8 mr-3" alt="Flowbite Logo" />
-                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Card Deals</span>
+                <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Car Deals</span>
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
