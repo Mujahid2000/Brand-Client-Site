@@ -11,7 +11,7 @@ const Brand = () => {
         fetch('http://localhost:5050/carmodel')
             .then(response => response.json())
             .then(data => setCarData(data))
-            .catch(error => console.error('Error fetching data: ', error));
+            .catch(error =>{});
     }, []); 
 
     return (

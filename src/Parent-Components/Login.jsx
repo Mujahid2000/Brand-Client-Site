@@ -39,7 +39,7 @@ const Login = () => {
                 navigate(location?.state ? location.state : '/');
             })
             .catch(err => {
-                console.error(err);
+              
                 Swal.fire({
                     icon: 'error',
                     title: 'Oops...',
@@ -49,7 +49,7 @@ const Login = () => {
     }
 
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='max-w-7xl mx-auto p-4'>
             <div className="min-h-screen mt-10 min-h-screen flex items-center justify-center rounded-xl bg-gradient-to-r from-green-400 to-blue-500 lg:mt-0 flex items-center justify-center">
             <div className="bg-white p-8 rounded shadow-md w-full max-w-[400px]">
                 <div className="text-center">

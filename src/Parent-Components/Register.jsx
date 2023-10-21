@@ -43,7 +43,7 @@ const Register = () => {
 
             })
             .catch(error => {
-                console.error(error.code);
+              
                 if (error.code === 'auth/email-already-in-use') {
                     Swal.fire({
                         icon: 'error',

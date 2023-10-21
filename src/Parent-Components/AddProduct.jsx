@@ -1,4 +1,4 @@
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 
 const AddProductPage = () => {
@@ -20,7 +20,7 @@ const AddProductPage = () => {
         const brandData = {
             image, name, brand, type, price, description, rating
         }
-        console.log(brandData);
+     
 
         // send data server
 
@@ -33,8 +33,9 @@ const AddProductPage = () => {
         })
         .then(res => res.json())
         .then(data =>{
-            console.log(data);
-            if(data.insertedId){
+            
+            if (data.insertedId) {
+                form.reset();
                 Swal.fire({
                     title: 'Success',
                     text: 'Added Successfully',
