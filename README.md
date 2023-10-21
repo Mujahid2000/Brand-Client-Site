@@ -12,3 +12,4 @@ Currently, two official plugins are available:
 2. When you click on the cards, you will be shown products of specific brands.
 3.Each card of the brand products will have a detail and update button through which you can view the product details and update the product information.
 4. If you want, you can add your desired products to the cart section.
+5. Finally it can be said that on this website you can do almost everything that a website user can do selling or buying a car or updating.
