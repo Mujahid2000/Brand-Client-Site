@@ -1,5 +1,10 @@
+
+
+
+
 const UpdateForm = () => {
 return (
+    
     <div>
     <div>
             <form className="bg-white rounded-lg shadow-md p-8 max-w-sm mx-auto space-y-6">

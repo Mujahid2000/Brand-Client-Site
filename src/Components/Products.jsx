@@ -2,6 +2,8 @@ import { Rating } from "flowbite-react";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
+import Slider from "./Slider";
+
 const Products = () => {
     const [data, setData] = useState([]);
     const { brand } = useParams();
@@ -21,12 +23,15 @@ const Products = () => {
 
     return (
         <div>
-            
+            <div>
+                <Slider></Slider>
+            </div>
         <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-3 gap-3">
-        {data.filter((item) => item.brand === brand) 
-        .map((item) => (
-            <div key={item.id} className="max-w-sm rounded overflow-hidden shadow-lg"> 
+        {data
+            .filter((item) => item.brand === brand) // Filter data by brand
+            .map((item) => (
+            <div key={item.id} className="max-w-sm rounded overflow-hidden shadow-lg">
                 <img src={item.image} alt={item.name} className="w-full h-48 object-cover" />
                 <div className="px-6 py-4">
                     <h2 className="font-bold text-xl text-gray-800 mb-2">{item.brand}</h2>
@@ -34,6 +39,7 @@ const Products = () => {
                     <p className="text-gray-600 text-base mb-2">{item.type}</p>
                     <div className="flex justify-between">
                     <p className="text-blue-500 text-xl">Price: {item.price}</p>
+                   
                     <p>
                     <Rating>
                     <Rating.Star />
@@ -63,6 +69,11 @@ const Products = () => {
             </div>
         ))}
             </div>
+        </div>
+        <div>
+            {
+
+            }
         </div>
         </div>
     );

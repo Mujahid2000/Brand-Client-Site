@@ -1,9 +1,11 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const Details = () => {
+    const data = useParams();
     return (
         <div>
-            <h2>this is a </h2>
+            <p></p>
         </div>
     );
 };
