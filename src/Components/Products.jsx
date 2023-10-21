@@ -9,7 +9,7 @@ const Products = () => {
     const { brand } = useParams();
 
     useEffect(() => {
-        const apiUrl = `http://localhost:5050/carmodel/${brand}`;
+        const apiUrl = `https://brand-server-site.vercel.app/carmodel/${brand}`;
 
         fetch(apiUrl)
             .then((response) => response.json())
