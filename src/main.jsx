@@ -18,6 +18,8 @@ import Error from './Parent-Components/Error';
 import Contact from './Parent-Components/Contact';
 import PrivateRoute from './PrivateRoute/PrivateRoute';
 import AuthProvide from './AuthProvider/AuthProvider';
+import Details from './Components/Details';
+import UpdateForm from './Components/UpdateForm';
 
 
 const router = createBrowserRouter([
@@ -63,6 +65,14 @@ const router = createBrowserRouter([
       {
         path: '/brand',
         element: <Brand></Brand>
+      },
+      {
+        path: '/detail/:id',
+        element: <Details></Details>
+      },
+      {
+        path: '/update/:id',
+        element: <UpdateForm></UpdateForm>
       }
       
     ]
