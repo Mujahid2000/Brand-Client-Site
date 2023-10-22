@@ -59,7 +59,7 @@ const Details = () => {
                         <h2 className="text-3xl font-semibold">{data?.name}</h2>
                         <p className="text-xl mt-2 text-gray-600">{data?.brand}</p>
                         <p className="text-xl mt-2 text-gray-600">{data?.type}</p>
-                        <p className="text-2xl mt-4 text-red-700">${data?.price}</p>
+                        <p className="text-2xl mt-4 text-red-700">{data?.price}</p>
                         <p className="text-2xl mt-2">{data?.rating} stars</p>
                         <p className="text-xl mt-2">{data?.description}</p>
                         <button onClick={handleAddToCart} className='btn btn-primary bg-blue-800 py-2 px-8 text-white mt-8'>Add To Cart</button>
