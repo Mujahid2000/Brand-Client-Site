@@ -1,5 +1,5 @@
 
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import IdCards from '../Components/IdCards';
 
 const Brand = () => {
